@@ -2,10 +2,8 @@
 
 import { prisma } from "@/lib/prisma";
 import { auth, currentUser } from "@clerk/nextjs/server";
-import e from "express";
 import { revalidatePath } from "next/cache";
-import { execFileSync } from "node:child_process";
-import { use } from "react";
+
 
 export async function syncUser(){
     try {
